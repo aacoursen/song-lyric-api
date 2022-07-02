@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #fff
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/finlandica/v3/-nFsOGk-8vAc7lEtg0aSyZCty9GSsPBE19A7rHjy_C9csw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+hi {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 600px;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0.8px 36px rgb(red, green, blue); 
+    border-radius: 10px;
+    position: relative;
+}
+
+form input {
+    padding: 12px;
+    border: none;
+    background: #f6f6f6;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    min-width: 250px;
+}
+
+.btn {
+    background: linear-gradient(to right, #EA0909, #BD1E26);
+    border: none;
+    color: #fff;
+    padding: 6px 22px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.04px;
+    text-transform: uppercase;
+    min-height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #BD1E26, #EA0909);
+    color: #fff;
+}
+
+.result.box {
+ padding: 0px;
+ margin-top: 20px;
+}
+.full-lyrics, 
+.result ul {
+    padding: 20px;
+}
+.result ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+.result ul li img{
+    max-width: 120ex;
+    float: left;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.rsult ul li span {
+    background: #ddd;
+    border: none;
+    color: #222;
+    padding: 6px 22px;
+    display:  inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.rsult ul li span:hover {
+    background:linear-gradient(to right, #BD1E26, #EA0909)
+    color:#fff
+}
